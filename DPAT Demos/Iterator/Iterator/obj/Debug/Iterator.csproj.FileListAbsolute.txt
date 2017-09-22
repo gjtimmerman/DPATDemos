@@ -1,0 +1,5 @@
+C:\Users\Instructor\Source\Repos\DPATDemos\DPAT Demos\Iterator\Iterator\bin\Debug\Iterator.exe.config
+C:\Users\Instructor\Source\Repos\DPATDemos\DPAT Demos\Iterator\Iterator\bin\Debug\Iterator.exe
+C:\Users\Instructor\Source\Repos\DPATDemos\DPAT Demos\Iterator\Iterator\bin\Debug\Iterator.pdb
+C:\Users\Instructor\Source\Repos\DPATDemos\DPAT Demos\Iterator\Iterator\obj\Debug\Iterator.exe
+C:\Users\Instructor\Source\Repos\DPATDemos\DPAT Demos\Iterator\Iterator\obj\Debug\Iterator.pdb

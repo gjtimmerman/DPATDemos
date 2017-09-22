@@ -19,10 +19,6 @@ namespace Iterator
             return new PersonIterator(this);
         }
     }
-    public class GenTree
-    {
-        public Person Root;
-    }
     internal class ReturnNode
     {
         internal ReturnNode(Person person, int numChild)
