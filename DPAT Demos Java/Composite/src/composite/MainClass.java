@@ -20,7 +20,7 @@ class AtomicExpression extends Expression
     @Override
     public String Print()
     {
-        return new Integer(value).toString();
+        return Integer.toString(value);
     }
     private int value;
 }
