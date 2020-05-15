@@ -4,14 +4,24 @@ import java.math.BigDecimal;
 
 class OutOfStockException extends Exception
 {
-    public OutOfStockException(String message)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public OutOfStockException(String message)
     {
     	super(message);
     }
 }
 class AlcoholNotAllowedException extends Exception
 {
-    public AlcoholNotAllowedException(String message)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public AlcoholNotAllowedException(String message)
     { 
     	super(message);
     }
@@ -77,13 +87,12 @@ class ShopProxy implements Shopable
 public class MainClass {
 
 	public static void main(String[] args) {
-        Shopable myShop = Shop.Create(new UserToken ( "Gert Jan", 18 ));
+        Shopable myShop = Shop.Create(new UserToken ( "Gert Jan", 16 ));
         try {
 			System.out.println(myShop.Buy(Drinks.Beer, 10));
 		} catch (AlcoholNotAllowedException e) {
 			System.err.println("Sorry, Alcohol not allowed!");
 		} catch (OutOfStockException e) {
-			// TODO Auto-generated catch block
 			System.err.println("Sorry, this drink is out of stock!");
 		}
 

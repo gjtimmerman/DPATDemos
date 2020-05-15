@@ -132,7 +132,7 @@ public class MainClass {
         
         for(Person p : root)
         {
-            System.out.println("Person: " + p.Name + " +, Dob: " + p.DateOfBirth + ", Sex: " + p.Sex + ", Number of Children: " + ((p.children==null) ? 0 : p.children.length));
+            System.out.println("Person: " + p.Name + ", Dob: " + p.DateOfBirth + ", Sex: " + p.Sex + ", Number of Children: " + ((p.children==null) ? 0 : p.children.length));
         }
     }
 
