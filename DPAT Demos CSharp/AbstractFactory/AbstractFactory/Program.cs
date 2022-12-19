@@ -138,7 +138,7 @@ namespace AbstractFactory
 
         static void Main(string[] args)
         {
-            BicyclePartsFactory myFactory = new GazelleFactory();
+            BicyclePartsFactory myFactory = new BatavusFactory();
 
             BicyclePart[] myBicyclePartSet = new BicyclePart[4];
             myBicyclePartSet[0] = myFactory.CreateSaddle();

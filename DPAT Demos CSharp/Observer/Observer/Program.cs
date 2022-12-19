@@ -43,7 +43,7 @@ namespace Observer
     {
         public void Update(EventArgs args)
         {
-            CarEventArgs cargs = args as CarEventArgs;
+            CarEventArgs ?cargs = args as CarEventArgs;
             Console.WriteLine($"Speedlimit Exceeded: {cargs?.Speed}");
         }
     }

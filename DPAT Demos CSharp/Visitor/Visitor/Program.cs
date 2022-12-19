@@ -37,13 +37,13 @@ namespace Visitor
     }
     public class PrintVisitor : NodeVisitor
     {
-        public string Result { get; set; }
+        public string ?Result { get; set; }
         public override void VisitAddExpression(AddExpression ae)
         {
             ae.left.Accept(this);
-            string resl = Result;
+            string resl = Result ?? "";
             ae.right.Accept(this);
-            string resr = Result;
+            string resr = Result ?? "";
             Result = resl + "+" + resr;
         }
 
@@ -55,7 +55,7 @@ namespace Visitor
         public override void VisitMinusExpression(MinusExpression me)
         {
             me.innerExpression.Accept(this);
-            string res = Result;
+            string res = Result ?? "";
             Result = "-" + res;
 
         }
